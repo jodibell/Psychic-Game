@@ -8,7 +8,7 @@ var guessesSoFar = [];
 var userGuess = ("");
 
 // Get the computer's key choice. Must be random. Create an array with the choices and randomly choose one of the choices.
-var computerChoices = ["a", "b", "c", "d"];
+var computerChoices = ["a", "b", "c", "d", "e"];
 //Guessing there's a better way to go through the alphabet than what I did above...
 
 var computerGuess = computerChoices [Math.floor(Math.random() * computerChoices.length)];
