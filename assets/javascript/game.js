@@ -18,7 +18,7 @@ var computerGuess = computerChoices [Math.floor(Math.random() * computerChoices.
 document.onkeyup = function(event) {
     
     //If guessesLeft > 0, then check that it's a letter key, and if so, run this function.
-    if (guessesLeft > 0){
+    if (guessesLeft > 1){
         // Determines which key was pressed. (May add something later if a non-letter key was pressed.)
         userGuess = event.key;
 
@@ -27,6 +27,7 @@ document.onkeyup = function(event) {
                 wins++;
                 guessesLeft = 5;
                 guessesSoFar = [];
+                computerGuess = [];
                 console.log (wins);
                 //Restart game or display Win message?
                 
